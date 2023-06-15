@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Add-Data</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Add-Data</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <!-- <ion-button (click)="insertDATA()" shape="round">
+    Insert Data 
+  </ion-button> -->
+
+  <div id="container ">
+
+    <div class="col m-4" style="padding: 10px;">
+      <form>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <!-- ngModelChange -->
+          <ion-input type="text" (ngModelChange)="SaveAsdraft()" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" id="name" placeholder="Name" required></ion-input>
+        </div>
+        <div class="mb-3">
+          <label for="department" class="form-label">Department</label>
+          <ion-input type="text" (ngModelChange)="SaveAsdraft()" id="department" [(ngModel)]="department" [ngModelOptions]="{standalone: true}" placeholder="Department" required></ion-input>
+        </div>
+        
+        <ion-button type="submit" class="btn btn-primary" (click)="insertDATA()">Add Data</ion-button>
+      </form>
+    </div>
+
+   
+  </div>
+
+</ion-content>

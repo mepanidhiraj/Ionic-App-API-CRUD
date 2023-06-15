@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Del-Data</ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Del-Data</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container ">
+
+    <div class="col m-4" style="padding: 10px;">
+      <form>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">ID</label>
+          <ion-input type="number"  [(ngModel)]="id" [ngModelOptions]="{standalone: true}" id="id" placeholder="Id" required></ion-input>
+        </div>
+        
+        
+        <ion-button type="submit" class="btn btn-primary" (click)="deleted_DATA()">Del Data</ion-button>
+      </form>
+    </div>
+
+   
+  </div>
+
+</ion-content>

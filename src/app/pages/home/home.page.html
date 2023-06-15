@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Test Api
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Test Api</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <ion-button (click)="Add_Data()" expand="block" fill="clear" shape="round">
+     Add Data
+    </ion-button>
+
+    <ion-button (click)="Edit_Data()" expand="block" fill="clear" shape="round">
+      Edit Data
+     </ion-button>
+
+     <ion-button (click)="Del_Data()" expand="block" fill="clear" shape="round">
+      Del Data
+     </ion-button>
+
+     <ion-button (click)="View_Data()" expand="block" fill="clear" shape="round">
+      View Data
+     </ion-button>
+
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>
